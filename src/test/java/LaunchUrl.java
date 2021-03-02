@@ -23,7 +23,7 @@ public class LaunchUrl  extends TestBase{
 	@Test()
 	public void clickOnProduct() throws InterruptedException
 	{
-		createproduct.clickOnProductMenu();
+//		createproduct.clickOnProductMenu();
 		driver.manage().deleteAllCookies();
 		
 		

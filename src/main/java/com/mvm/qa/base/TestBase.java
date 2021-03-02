@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestBase {
 
 	public static WebDriver driver;
-    private static final Logger LOG = LogManager.getLogger(TestBase.class.getName());
+     protected static final Logger LOG = LogManager.getLogger(TestBase.class.getName());
 
 	   public static Properties prop;
 //	   public WebDriverWait wait ;
@@ -31,8 +31,6 @@ public class TestBase {
 	    	 prop = new Properties();
 	    	 FileInputStream ip =new FileInputStream("D:\\Workspace\\MultiVendor\\src\\main\\java\\com\\mvm\\qa\\config\\config.Properties");
 	    	 prop.load(ip);
-	    	 LOG.info("webkul");
-	    	 LOG.trace("trace");
 	    	 }catch (FileNotFoundException e) {
 	    		 e.printStackTrace();
 	    	 }catch (IOException e) {

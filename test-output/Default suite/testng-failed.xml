@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ClickOnProductMenu">
+      <class name="CreateNormalProduct">
         <methods>
           <include name="setup"/>
-          <include name="clickOnProduct"/>
+          <include name="clickOnAddProductButton"/>
         </methods>
-      </class> <!-- ClickOnProductMenu -->
+      </class> <!-- CreateNormalProduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

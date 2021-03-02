@@ -6,11 +6,12 @@ import org.testng.annotations.Test;
 
 import com.mvm.qa.base.TestBase;
 import com.mvm.qa.pages.CreateProduct;
+import com.mvm.qa.pages.ProductMenuOptions;
 
 public class ClickOnProductMenu extends TestBase {
 	
 	
-	CreateProduct createproduct;
+	ProductMenuOptions productmenuoptions;
 	public ClickOnProductMenu(){
 		super();	
 	}
@@ -19,7 +20,7 @@ public class ClickOnProductMenu extends TestBase {
 	@BeforeSuite
 	public void setup() {
 		initialization();
-		createproduct=new CreateProduct();
+		productmenuoptions=new ProductMenuOptions();
 		LOG.info("rohit jha");
 //		loginpage =new LoginPage();
 //		clickon =new ClickOnSignInButton();
@@ -27,7 +28,7 @@ public class ClickOnProductMenu extends TestBase {
 	@Test()
 	public void clickOnProduct() throws InterruptedException
 	{
-		createproduct.clickOnProductMenu();
+		productmenuoptions.clickOnProductMenu();
 		driver.manage().deleteAllCookies();
 		
 		
