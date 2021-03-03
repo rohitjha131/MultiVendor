@@ -27,9 +27,14 @@ public class CreateNormalProduct extends TestBase{
 	@Test(priority=2)
 	public void clickOnAddProductButton() throws InterruptedException 
 			{
-		        CreateProduct createproduct= new CreateProduct();
-		            createproduct.clickOnAddProductButton();
-		            createproduct.productForm();
+		        createproduct= new CreateProduct();
+	            createproduct.clickOnAddProductButton();
+	            createproduct.productForm();
 			}
+	@Test(priority=3)
+	public void validateProductCreate()
+	{
+		createproduct.validateProductCreate();
+	}
 	
 }

@@ -6,7 +6,7 @@
       <class name="CreateNormalProduct">
         <methods>
           <include name="setup"/>
-          <include name="clickOnAddProductButton"/>
+          <include name="validateProductCreate"/>
         </methods>
       </class> <!-- CreateNormalProduct -->
     </classes>

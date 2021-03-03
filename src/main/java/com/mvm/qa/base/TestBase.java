@@ -15,13 +15,14 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
 
 public class TestBase {
 
 	public static WebDriver driver;
      protected static final Logger LOG = LogManager.getLogger(TestBase.class.getName());
-
+     public static SoftAssert softAssert=new SoftAssert(); 
 	   public static Properties prop;
 //	   public WebDriverWait wait ;
 	  
