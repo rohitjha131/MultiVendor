@@ -21,6 +21,7 @@ import org.testng.asserts.SoftAssert;
 public class TestBase {
 
 	public static WebDriver driver;
+	public static WebDriverWait wait ;
      protected static final Logger LOG = LogManager.getLogger(TestBase.class.getName());
      public static SoftAssert softAssert=new SoftAssert(); 
 	   public static Properties prop;
@@ -52,7 +53,7 @@ public class TestBase {
 	    		String shop=prop.getProperty("admin_store");
 	    		 driver=new ChromeDriver();
 	    		driver.manage().window().maximize();
-	    		// WebDriverWait wait=new WebDriverWait(driver, 10);
+	    		 wait=new WebDriverWait(driver, 10);
 	    		driver.get(""+url+"p=marketplace&shop="+shop+"&mkey="+md5+"&timestamp="+time+"");
 //	    		adminProductCreate.normalProduct t1=new adminProductCreate.normalProduct();
 //	    		t1.run();
